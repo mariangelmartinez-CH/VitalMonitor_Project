@@ -1,0 +1,17 @@
+<h1>Iniciar sesion</h1>
+
+<form (ngSubmit)="entrar()">
+  <label>
+    Correo
+    <input type="email" name="correo" [(ngModel)]="correo" required />
+  </label>
+
+  <label>
+    Contrasena
+    <input type="password" name="contrasena" [(ngModel)]="contrasena" required />
+  </label>
+
+  <button type="submit">Entrar</button>
+</form>
+
+<p>{{ mensaje() }}</p>
